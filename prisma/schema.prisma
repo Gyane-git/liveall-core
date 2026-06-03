@@ -7,6 +7,34 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id            Int       @id @default(autoincrement())
+  name          String
+  email         String    @unique
+  phone         String?
+  password      String
+  profileImage  String?
+  roleId        Int
+  status        Boolean   @default(true)
+  lastLogin     DateTime?
+
+  role          Role      @relation(fields: [roleId], references: [id])
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Role {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+
+  users       User[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
 model Banner {
   id          Int      @id @default(autoincrement())
   title       String
@@ -28,4 +56,141 @@ model Faq {
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+}
+
+model ContactMessage {
+  id          Int      @id @default(autoincrement())
+
+  name        String
+  email       String
+  phone       String?
+
+  subject     String?
+  message     String   @db.Text
+
+  isRead      Boolean  @default(false)
+
+  createdAt   DateTime @default(now())
+}
+
+model TeamMember {
+  id              Int      @id @default(autoincrement())
+
+  name            String
+  designation     String
+
+  image           String?
+
+  shortBio        String?  @db.Text
+
+  facebook        String?
+  instagram       String?
+  linkedin        String?
+  twitter         String?
+
+  displayOrder    Int      @default(0)
+
+  status          Boolean  @default(true)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Page {
+  id                Int      @id @default(autoincrement())
+
+  title             String
+  slug              String   @unique
+
+  shortDescription  String?  @db.Text
+  content           String   @db.LongText
+
+  metaTitle         String?
+  metaDescription   String?  @db.Text
+  metaKeywords      String?
+
+  bannerImage       String?
+
+  status            Boolean  @default(true)
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model AuditLog {
+  id          Int      @id @default(autoincrement())
+
+  userId      Int?
+
+  action      String
+  module      String
+
+  oldData     Json?
+  newData     Json?
+
+  ipAddress   String?
+
+  createdAt   DateTime @default(now())
+}
+
+model Notification {
+  id          Int      @id @default(autoincrement())
+
+  title       String
+  message     String   @db.Text
+
+  userId      Int?
+  isRead      Boolean  @default(false)
+
+  createdAt   DateTime @default(now())
+}
+
+model Upload {
+  id          Int      @id @default(autoincrement())
+
+  fileName    String
+  filePath    String
+  fileType    String
+  fileSize    Int
+
+  uploadedBy  Int?
+
+  createdAt   DateTime @default(now())
+}
+
+model Newsletter {
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  isActive    Boolean  @default(true)
+
+  createdAt   DateTime @default(now())
+}
+
+
+
+model Setting {
+  id                Int      @id @default(autoincrement())
+
+  siteName          String
+  siteTitle         String?
+  logo              String?
+  favicon           String?
+
+  email             String?
+  phone             String?
+  alternatePhone    String?
+
+  address           String?  @db.Text
+
+  facebook          String?
+  instagram         String?
+  linkedin          String?
+  youtube           String?
+  twitter           String?
+
+  copyrightText     String?
+  googleMapEmbed    String?  @db.Text
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
 }
