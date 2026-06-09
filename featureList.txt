@@ -1,0 +1,150 @@
+Ramro question. LiveAll Core banauda CRUD matra sochera hudaina. Professional website/admin panel ma dherai reusable features hunxa.
+
+1. Authentication & Security
+✓ Login
+✓ Signup
+✓ Logout
+✓ Forgot Password
+✓ Reset Password
+✓ Change Password
+✓ Email Verification
+✓ Two Factor Authentication (2FA)
+✓ JWT Authentication
+✓ Role Based Access
+✓ Permission Management
+✓ Session Management
+✓ Remember Me
+✓ Account Lock after failed attempts
+2. User Experience (UX)
+✓ Toast
+✓ Confirm Modal
+✓ Warning Modal
+✓ Info Modal
+✓ Success Modal
+✓ Loading Spinner
+✓ Skeleton Loading
+✓ Progress Bar
+✓ Breadcrumb
+✓ Pagination
+✓ Search
+✓ Filter
+✓ Sort
+✓ Infinite Scroll
+3. State Management
+✓ Auth Store
+✓ Theme Store
+✓ Sidebar Store
+✓ Notification Store
+✓ Modal Store
+✓ Loading Store
+
+Usually Zustand use garinxa.
+
+4. User Side Features
+✓ Profile
+✓ Update Profile
+✓ Change Password
+✓ Upload Profile Picture
+✓ Notification Center
+✓ Wishlist
+✓ Saved Items
+✓ Recently Viewed
+✓ Activity History
+5. Admin Side Features
+✓ Dashboard
+✓ User Management
+✓ Role Management
+✓ Permission Management
+✓ Settings
+✓ Audit Logs
+✓ Reports
+✓ Analytics
+✓ Content Management
+6. CMS Features
+✓ Banner
+✓ FAQ
+✓ Testimonials
+✓ Reviews
+✓ Team Members
+✓ Pages
+✓ Blogs
+✓ Categories
+✓ Tags
+✓ Menus
+✓ Gallery
+✓ SEO
+7. Settings Module
+✓ Site Name
+✓ Logo
+✓ Favicon
+✓ Social Links
+✓ Contact Info
+✓ SMTP Settings
+✓ Google Analytics
+✓ Google Tag Manager
+✓ Maintenance Mode
+8. File Management
+✓ Image Upload
+✓ File Upload
+✓ Drag & Drop Upload
+✓ Image Compression
+✓ Multiple Upload
+✓ Media Library
+9. Notification System
+✓ In-App Notification
+✓ Email Notification
+✓ Push Notification
+✓ SMS Notification
+✓ Read / Unread Status
+10. Search System
+✓ Global Search
+✓ User Search
+✓ Blog Search
+✓ FAQ Search
+✓ Product Search
+
+Professional admin panel ma search almost everywhere hunxa.
+
+11. Audit & Logs
+✓ Login History
+✓ User Activity
+✓ Create Logs
+✓ Update Logs
+✓ Delete Logs
+✓ IP Tracking
+
+Example:
+
+Admin created banner
+Admin deleted FAQ
+User updated profile
+12. Cookies & Storage
+✓ Remember Login
+✓ Cookie Consent
+✓ Theme Preference
+✓ Language Preference
+✓ Recently Viewed Data
+13. SEO Features
+✓ Meta Title
+✓ Meta Description
+✓ Open Graph
+✓ Twitter Card
+✓ Sitemap
+✓ Robots.txt
+✓ Canonical URL
+14. Performance Features
+✓ Caching
+✓ Lazy Loading
+✓ Image Optimization
+✓ Pagination
+✓ Debounced Search
+✓ API Rate Limiting
+15. Developer Features
+✓ API Response Helper
+✓ Error Handler
+✓ Logger
+✓ Validation
+✓ Environment Config
+✓ Reusable Services
+✓ Reusable Hooks
+✓ Reusable Components

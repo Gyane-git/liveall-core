@@ -2,8 +2,8 @@
 
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
-import Header from "@/components/nityagro-header"
-import Footer from "@/components/nityagro-footer";
+import Header from "@/components/header"
+import Footer from "@/components/footer";
 
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 //import { Toaster } from "react-hot-toast";

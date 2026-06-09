@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import AdminShell from "@/components/AdminShell";
+import AdminShell from "@/components/adminlayoutWrapper";
 //import { requireAdminRole } from "@/lib/auth";
 
 export default async function AdminLayout({
