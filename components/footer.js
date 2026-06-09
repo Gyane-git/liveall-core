@@ -122,7 +122,7 @@ const CUSTOMER_SUPPORT = [
 ];
 
 const COMPANY = [
-  { label: "About Nityagro", href: "/about" },
+  { label: "About ", href: "/about" },
   
   { label: "Contact Us", href: "/contact-us" },
 ];
@@ -181,14 +181,14 @@ export default function Footer() {
                           className="flex items-center gap-3"
                         >
                           <PhoneIcon size={17} className="text-sm" />
-                          <span className="text-xs">(+91)-540-025-124553</span>
+                          <span className="text-xs">(+977)-98xxxxxxxx</span>
                         </a>
                         <a
-                          href="mailto:sale@nityagro.com"
+                          href="mailto:sale@devmind.com.np"
                           className="flex items-center gap-3"
                         >
                           <MailIcon size={17} className="text-sm" />
-                          <span className="text-xs">sale@nityagro.com</span>
+                          <span className="text-xs">sale@devmind.com.np</span>
                         </a>
                       </div>
                     </div>
@@ -250,7 +250,7 @@ export default function Footer() {
 
                   {/* Bottom bar */}
                   <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-4 text-white text-sm font-normal text-sm">
-                    <p>©️ 2022, Nityagro - All rights reserved</p>
+                    <p>©️{new Date().getFullYear()}, DevMind - All rights reserved</p>
                     <div className="flex items-center gap-4">
                       <span className="font-normal text-sm">Follow Us</span>
                       <div className="flex gap-3">
@@ -262,12 +262,12 @@ export default function Footer() {
                           },
                           {
                             icon: <TikTokIcon />,
-                            href: "https://www.tiktok.com/@nityagro.np",
+                            href: "https://www.tiktok.com/@devmind.np",
                             label: "TikTok",
                           },
                           {
                             icon: <InstagramIcon />,
-                            href: "https://www.instagram.com/nityamagro.np",
+                            href: "https://www.instagram.com/devmind.np",
                             label: "Instagram",
                           },
                         ].map(({ icon, href, label }) => (
